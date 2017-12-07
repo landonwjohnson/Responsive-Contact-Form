@@ -6,7 +6,7 @@
     <meta name="keywords" content="Landon Johnson, Web Design, Graphic Design, Digital Media Specialist">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
 </head>
 <body>
     <div class="container">
@@ -23,8 +23,8 @@
             <!-- @TODO Validation -->
             <div class="contact">
                 <h3>Email Us</h3>
-                <div class="alert">Your message has been sent</div>
-                <form id="contactForm">
+                {{msg}}
+                <form method="POST" action="send">
                     <p>
                         <label>Name</label>
                         <input type="text" name="name" id="name" required>
