@@ -45,8 +45,8 @@ app.post('/send', (req, res) => {
    let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'landonnodemailer@gmail.com', // generated ethereal user
-        pass: 'nodemailer'  // generated ethereal password
+        user: '**********@gmail.com', // generated ethereal user
+        pass: '*******'  // generated ethereal password
     },
     tls: {
         rejectUnauthorized: false
@@ -55,8 +55,8 @@ app.post('/send', (req, res) => {
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: `'New Message from ${req.body.name} <landonnodemailer@gmail.com>'`, // sender address
-        to: 'landonwjohnson@gmail.com', // list of receivers
+        from: `'New Message from ${req.body.name} <**********@gmail.com>'`, // sender address
+        to: '******@gmail.com', // list of receivers
         subject: 'Hello ✔', // Subject line
         text: 'Hello world?', // plain text body
         html: output // html body
