@@ -90,6 +90,16 @@ ul{
     transition: background-color 0.2s ease-in-out;
 }
 
+.alert{
+    transition: 1s;
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: white;
+    margin-bottom: 10px;
+    display: none;
+}
+
 /*LARGE SCREENS*/
 @media(min-width:700px){
     .wrapper{
