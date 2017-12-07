@@ -87,7 +87,7 @@ ul{
     background: #92bde7;
     color: white;
     outline: 0;
-    transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-in-out;
 }
 
 /*LARGE SCREENS*/
